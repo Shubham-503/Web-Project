@@ -294,10 +294,10 @@ margin-right: 100px;
     box-shadow: 0 0 15px gray;
     
 }
-.queary-form form{
+/* .queary-form form{ */
     /* display:flex;
     flex-direction: column; */
-}
+/* } */
 .queary-form input{
     height: 3rem;
     margin: 5px;
@@ -332,13 +332,12 @@ margin-right: 100px;
     transition:all 0.4s;
 }
 
-<<<<<<< HEAD
+
 .button{
    padding-top:10px;
    padding-bottom:10px;
 }
-=======
->>>>>>> master
+
 
 /* Footer Section  */
 .footer-section{
@@ -494,3 +493,79 @@ align-items: center;
 #not-a-member{
     font-size: 1rem;
 }
+
+/* Changes */
+/* added by Shubham */
+/* description separator */
+.blog-post {
+    border-bottom: 1px solid #ccc;
+    margin: 2rem 0.5rem;
+    padding-bottom: 1rem;
+    position: relative;  
+  }
+  
+  /* Add little circle in the middle after each post */
+  .blog-post:after {
+    content: "";
+    display: block;
+  
+    /* The circle */
+    width: 7px;
+    height: 7px;
+    background: #FFF;
+    border: 1px solid #aaa;
+    box-shadow: #eee 0 0 0 10px;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    
+    /* Put in the middle of post's border bottom */
+    position: absolute;
+      bottom: -5px;
+      left: 50%;
+    margin-left: -5px;
+  }
+  
+  .blog-main {
+    
+      /* background: rgba(255,255,255,0.5); */
+      border: 2px solid grey;
+      border-radius: 10px;
+      box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+    }
+  
+  .carousel-item img {
+      height: 700px;
+      opacity: 1;
+      transition: .5s ease;
+      backface-visibility: hidden;
+      
+  }
+  
+  .textOverImage {
+      transition: .5s ease;
+      opacity: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%)
+  }
+  
+  .carousel-item:hover img {
+      opacity: 0.4;
+    }
+    
+  .carousel-item:hover .textOverImage{
+      opacity: 1;
+  }
+    
+    .text {
+      background-color: #4CAF50;
+      color: white;
+      font-size: 16px;
+      padding: 16px 32px;
+    }
+    
+    
+  
